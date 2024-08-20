@@ -21,7 +21,8 @@
   .contant-box {
     display: flex;
     justify-content: space-between;
-    gap: 70px;
+    // gap: 70px;
+    margin-bottom: 120px;
 
     .images-part {
         position: relative;
@@ -63,12 +64,83 @@
             line-height: 30px;
             margin-bottom: 40px;
         }
-        .author{
-            font-family: "Open Sans", sans-serif;
-            font-size: 1.5rem;
-            font-style: italic;
-            color: #000000;
+        .author-row{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            svg{
+                width: 9px;
+                height: 17px;
+            }
+            .author{
+                font-family: "Open Sans", sans-serif;
+                font-size: 1.5rem;
+                font-style: italic;
+                color: #000000;
+                margin-bottom: 0;
+            }
+        }
+    }
+  }
+  .second-box-contant{
+    flex-direction: row-reverse;
+
+    .images-part {
+        position: relative;
+        // width: 845px;
+        // height: 527px;
+
+      .image-one-second-box {
+        width: 585px;
+        height: 470px;
+        background-color: #7E5AFF;
+        position: absolute;
+        top: 0;
+        right: -215px;
+      }
+      .image-two-second-box {
+        width: 630px;
+        height: 470px;
+        background: url("../../img/what-we-do/commerce-center.png") center / 100% 100% no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        top: 57px;
+        right: 0px;
+      }
+    }
+    .text-part{
+        padding: 151px 0 0px;
+        width: 470px;
+
+        .sup-title{
+            font-size: 2.2rem;
             margin-bottom: 0;
+        }
+        h2{
+            margin-bottom: 19px;
+            width: 476px;
+        }
+        p{
+            width: 470px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+        .author-row{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            svg{
+                width: 9px;
+                height: 17px;
+            }
+            .author{
+                font-family: "Open Sans", sans-serif;
+                font-size: 1.5rem;
+                font-style: italic;
+                color: #000000;
+                margin-bottom: 0;
+            }
         }
     }
   }
