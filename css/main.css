@@ -62,7 +62,7 @@ p {
   padding: 0;
   margin: 0;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
 }
 
@@ -75,6 +75,7 @@ h1 {
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 4.4rem;
+  margin-bottom: 90px;
 }
 
 h3 {
@@ -91,6 +92,87 @@ h3 {
 .logo svg {
   height: 32px;
   width: 32px;
+}
+
+.what_we_do {
+  padding: 100px 0 150px;
+}
+.what_we_do h2.main-title {
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+.what_we_do h2.main-title::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100px;
+  background-color: #2c4058;
+  position: absolute;
+  margin: auto;
+  top: -30px;
+  left: 0;
+  right: 0;
+}
+.what_we_do .contant-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+.what_we_do .contant-box .images-part {
+  position: relative;
+}
+.what_we_do .contant-box .images-part .image-one {
+  width: 585px;
+  height: 470px;
+  background-color: #55b7ff;
+  position: absolute;
+  top: 0;
+  left: -215px;
+}
+.what_we_do .contant-box .images-part .image-two {
+  width: 630px;
+  height: 470px;
+  background: url("../../img/what-we-do/trade-center.png") center/100% 100% no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 57px;
+  left: 0px;
+}
+.what_we_do .contant-box .text-part {
+  padding: 151px 0 0px;
+  width: 470px;
+}
+.what_we_do .contant-box .text-part .sup-title {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+.what_we_do .contant-box .text-part h2 {
+  margin-bottom: 19px;
+}
+.what_we_do .contant-box .text-part p {
+  width: 470px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.what_we_do .contant-box .text-part .author {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.button-box {
+  padding: 16px 0;
+  margin-bottom: 60px;
+}
+.button-box .button {
+  padding: 16px 41px;
+  text-transform: uppercase;
+  border: 1px solid #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
