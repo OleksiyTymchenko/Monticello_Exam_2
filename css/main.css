@@ -84,7 +84,7 @@ h3 {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1190px;
   width: 100%;
   margin: auto;
 }
@@ -95,7 +95,7 @@ h3 {
 }
 
 .what_we_do {
-  padding: 100px 0 150px;
+  padding: 100px 10px 150px;
 }
 .what_we_do h2.main-title {
   text-align: center;
@@ -117,6 +117,7 @@ h3 {
 .what_we_do .contant-box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 120px;
 }
 .what_we_do .contant-box .images-part {
@@ -133,7 +134,7 @@ h3 {
 .what_we_do .contant-box .images-part .image-two {
   width: 630px;
   height: 470px;
-  background: url("../../img/what-we-do/trade-center.png") center/100% 100% no-repeat;
+  background: url("./../img/what-we-do/trade-center.png") center/100% 100% no-repeat;
   background-size: cover;
   position: absolute;
   top: 57px;
@@ -188,7 +189,7 @@ h3 {
 .what_we_do .second-box-contant .images-part .image-two-second-box {
   width: 630px;
   height: 470px;
-  background: url("../../img/what-we-do/commerce-center.png") center/100% 100% no-repeat;
+  background: url("./../img/what-we-do/commerce-center.png") center/100% 100% no-repeat;
   background-size: cover;
   position: absolute;
   top: 57px;
@@ -228,6 +229,27 @@ h3 {
   margin-bottom: 0;
 }
 
+@media (min-width: 200px) and (max-width: 1145px) {
+  .contant-box {
+    flex-direction: column;
+  }
+  .contant-box h2 {
+    font-size: 3rem;
+  }
+  .contant-box p {
+    width: 300px;
+  }
+  .contant-box .images-part {
+    display: none;
+  }
+  .what_we_do .contant-box .text-part p {
+    width: 300px;
+  }
+  .what_we_do .second-box-contant .text-part p {
+    width: 300px;
+    margin: auto;
+  }
+}
 .button-box {
   padding: 16px 0;
   margin-bottom: 60px;
