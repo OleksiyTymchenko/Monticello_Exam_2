@@ -5,9 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Monticello</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital@0;1&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/Logo.png" type="image/x-icon" />
 </head>
 <body>
-    
-</body>
+    <header class="header none">
+      <div class="header-background"></div>
+      <!-- /.header-background -->
+      <div class="container">
+        <div class="logo">
+          <!-- <img src="./img/logo/logo_icon.png" alt="logo"> -->
+          <svg>
+            <use xlink:href="./img/Logo.svg#logo"></use>
+          </svg>
+        </div>
+        <!-- /.logo -->
+
+        <nav class="nav">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#section">Home</a>
+              <div class="hover-line"></div>
+              <!-- /.hover-line -->
+            </li>
+            <!-- /.list__item -->
+            <li class="list__item">
+              <a href="#article">About</a>
+              <div class="hover-line"></div>
+              <!-- /.hover-line -->
+            </li>
+            <!-- /.list__item -->
+            <li class="list__item">
+              <a href="#header">Products</a>
+              <div class="hover-line"></div>
+              <!-- /.hover-line -->
+            </li>
+            <!-- /.list__item -->
+            <li class="list__item">
+              <a href="#footer">Use Cases</a>
+              <div class="hover-line"></div>
+              <!-- /.hover-line -->
+            </li>
+            <!-- /.list__item -->
+            <li class="list__item">
+              <a href="#footer">Pricing</a>
+              <div class="hover-line"></div>
+              <!-- /.hover-line -->
+            </li>
+            <!-- /.list__item -->
+            <li class="list__item">
+              <a href="#footer">Resources</a>
+              <div class="hover-line"></div>
+              <!-- /.hover-line -->
+            </li>
+            <!-- /.list__item -->
+          </ul>
+          <!-- /.list -->
+        </nav>
+        <!-- /.nav -->
+      </div>
+      <!-- /.container -->
+
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="burger-menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#section">About</a></li>
+            <li><a href="#article">Products</a></li>
+            <li><a href="#header">Use Cases</a></li>
+            <li><a href="#footer">Pricing</a></li>
+            <li><a href="#footer">Resources</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.burger -->
+    </header>
+
+    <main class="main">
+      <section id="home" class="section hero none">
+        <div class="container">
+          <div class="text">
+            <h1>
+              A peer-to-peer stablecoin<br />
+              <span class="blue">clearinghouse</span> for the new<br />
+              economy
+            </h1>
+            <p>
+              We are bringing real solutions to the payments world by<br />
+              leveraging public blockchains.
+            </p>
+            <div class="">
+              <a class="button small-btn" href="#"
+                ><span class="bnt-name">JOIN NOW</span>
+                <span class="button-element"></span>
+                <!-- /.button-element -->
+              </a>
+            </div>
+            <!-- /.hero-buttons -->
+          </div>
+          <!-- /.text -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section -->
+      <div class="section what_we_do">
+        <div class="container">
+            <h2>
+                WHAT WE DO
+            </h2>
+            <div class="contant-box">
+                <div class="images-part">
+                    <div class="image-one"></div>
+                    <!-- /.image-one -->
+                     <div class="image-two"></div>
+                     <!-- /.image-two -->
+                </div>
+                <!-- /.images-part -->
+                <div class="text-part">
+                    <p class="sup-title">
+                        ONE WORLD
+                    </p>
+                    <!-- /.sup-title -->
+                     <h2>
+                        TRADE CENTER
+                     </h2>
+                     <p>
+                        Increasing prosperity in our lives can be accomplished<br>
+                         by having the right frame of mind. The truth is, our<br>
+                          thoughts are very powerful.
+                     </p>
+                     <a href="#" class="button">MORE DETAILS</a>
+                     <!-- /.button -->
+                      <p class="author">New York City, United States - 1776 feet </p>
+                      <!-- /.author -->
+                </div>
+                <!-- /.text-part -->
+            </div>
+            <!-- /.contant-box -->
+
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.section -->
+    </main>
+    <footer id="footer" class="footer none">
+      <div class="container">
+        <div class="footer-explanation">
+          <h2>Contact <span class="blue">our sales team</span></h2>
+          <p>
+            Our team is happy to answer your sales questions.<br />
+            Fill out the form and we’ll be in touch as soon as possible.
+          </p>
+        </div>
+        <!-- /.footer-explanation -->
+        <div class="footer-form">
+          <form action="#" method="post">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Надіслати</button>
+          </form>
+        </div>
+        <!-- /.footer-form -->
+        <div class="copyright">
+          <p>© 2024 Solisgroup. All Rights Reserved.</p>
+          <p>
+            made by
+            <a href="#">Zgraya.digital</a>
+          </p>
+          <div class="working-links">
+            <a href="#">User Agreement</a>
+            <a href="#"> Privacy Policy</a>
+          </div>
+          <!-- /.working-links -->
+        </div>
+        <!-- /.copyright -->
+      </div>
+      <!-- /.container -->
+    </footer>
+  </body>
 </html>
