@@ -9,115 +9,148 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="icon" href="./img/Logo.png" type="image/x-icon" />
+  
+
+    
   </head>
   <body>
-    <header class="header none">
-      <div class="header-background"></div>
-      <!-- /.header-background -->
-      <div class="container">
-        <div class="logo">
-          <!-- <img src="./img/logo/logo_icon.png" alt="logo"> -->
-          <svg>
-            <use xlink:href="./img/Logo.svg#logo"></use>
-          </svg>
-        </div>
-        <!-- /.logo -->
-
-        <nav class="nav">
-          <ul class="list">
-            <li class="list__item">
-              <a href="#section">Home</a>
-              <div class="hover-line"></div>
-              <!-- /.hover-line -->
-            </li>
-            <!-- /.list__item -->
-            <li class="list__item">
-              <a href="#article">About</a>
-              <div class="hover-line"></div>
-              <!-- /.hover-line -->
-            </li>
-            <!-- /.list__item -->
-            <li class="list__item">
-              <a href="#header">Products</a>
-              <div class="hover-line"></div>
-              <!-- /.hover-line -->
-            </li>
-            <!-- /.list__item -->
-            <li class="list__item">
-              <a href="#footer">Use Cases</a>
-              <div class="hover-line"></div>
-              <!-- /.hover-line -->
-            </li>
-            <!-- /.list__item -->
-            <li class="list__item">
-              <a href="#footer">Pricing</a>
-              <div class="hover-line"></div>
-              <!-- /.hover-line -->
-            </li>
-            <!-- /.list__item -->
-            <li class="list__item">
-              <a href="#footer">Resources</a>
-              <div class="hover-line"></div>
-              <!-- /.hover-line -->
-            </li>
-            <!-- /.list__item -->
-          </ul>
-          <!-- /.list -->
+    <header class="header ">
+      <div class="container-box container-box-header container">
+  
+        <nav class="navbar bg navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand justify-content-start" href="#">
+              <img class="logo" src="./img/Logo.png" alt="logo">
+              
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <img src="./img/we-do/burger.png" alt="burger icon">
+              </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <div class="circule"></div>
+                  <a class="nav-link active" aria-current="page" href="#home">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <div class="circule"></div>
+                  <a class="nav-link" href="#we-do">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                  <div class="circule"></div>
+                  <a class="nav-link" href="#news">NEWS</a>
+                </li>
+                <li class="nav-item">
+                  <div class="circule"></div>
+                  <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a class="nav-link socials" href="#about">
+                    <div class="social"></div>
+                    <!-- <svg class="social">
+                      <use xlink:href="./img/socials/facebook.svg#face"></use>
+                    </svg> -->
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link socials" href="#about">
+                    <div class="social2"></div>
+                    <!-- <svg class="social">
+                      <use xlink:href="./img/socials/twitter.svg#twit"></use>
+                    </svg> -->
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link socials" href="#about">
+                    <div class="social3"></div>
+                    <!-- <svg class="social">
+                      <use xlink:href="./img/socials/Instagram.svg#inst"></use>
+                    </svg> -->
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <!-- /.nav -->
       </div>
       <!-- /.container -->
-
-      <div class="burger">
-        <input type="checkbox" id="burger-toggle" />
-        <label for="burger-toggle" class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav class="burger-menu">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#section">About</a></li>
-            <li><a href="#article">Products</a></li>
-            <li><a href="#header">Use Cases</a></li>
-            <li><a href="#footer">Pricing</a></li>
-            <li><a href="#footer">Resources</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- /.burger -->
+  
     </header>
 
     <main class="main">
-      <section id="home" class="section hero none">
-        <div class="container">
-          <div class="text">
-            <h1>
-              A peer-to-peer stablecoin<br />
-              <span class="blue">clearinghouse</span> for the new<br />
-              economy
-            </h1>
-            <p>
-              We are bringing real solutions to the payments world by<br />
-              leveraging public blockchains.
-            </p>
-            <div class="">
-              <a class="button small-btn" href="#"
-                ><span class="bnt-name">JOIN NOW</span>
-                <span class="button-element"></span>
-                <!-- /.button-element -->
-              </a>
+      <section id="home" class="section hero">
+        <div class="container-box container"> 
+          <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active circule" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="circule arrow" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="circule" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" class="circule" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" class="circule" aria-label="Slide 5"></button>
             </div>
-            <!-- /.hero-buttons -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./img/hero/bg-hero.png" class="slider-image d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>SIMPLE & MODERN</h1>
+                  <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/hero/bg-hero.png" class="slider-image d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>SIMPLE & MODERN</h1>
+                  <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/hero/bg-hero.png" class="slider-image d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>SIMPLE & MODERN</h1>
+                  <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./img/hero/bg-hero.png" class="slider-image d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>SIMPLE & MODERN</h1>
+                  <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/hero/bg-hero.png" class="slider-image d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>SIMPLE & MODERN</h1>
+                  <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+                </div>
+              </div>
+            </div>
+            
           </div>
-          <!-- /.text -->
+          <a href="#what" class="arrow">
+            <svg class="arrow-svg">
+              <use xlink:href="./img/socials/arrow.svg#arrow-svg"></use>
+            </svg>
+          </a>
+          <!-- /.arrow -->
         </div>
-        <!-- /.container -->
       </section>
-      <!-- /.section -->
-      <div class="section what_we_do">
+      <div id="what" class="section what_we_do">
         <div class="container">
           <h2 class="main-title">WHAT WE DO</h2>
           <div class="contant-box">
@@ -142,14 +175,14 @@
                 <!-- /.button -->
               </div>
               <!-- /.button-box -->
-               <div class="author-row">
+              <div class="author-row">
                 <svg>
-                    <use xlink:href="./img/what-we-do/map-dot.svg#map-dot"></use>
+                  <use xlink:href="./img/what-we-do/map-dot.svg#map-dot"></use>
                 </svg>
-                   <p class="author">New York City, United States - 1776 feet</p>
-                   <!-- /.author -->
-               </div>
-               <!-- /.author-row -->
+                <p class="author">New York City, United States - 1776 feet</p>
+                <!-- /.author -->
+              </div>
+              <!-- /.author-row -->
             </div>
             <!-- /.text-part -->
           </div>
@@ -167,23 +200,23 @@
               <!-- /.sup-title -->
               <h2>COMMERCE CENTRE</h2>
               <p>
-                Successful businesses have many things in common,<br>
-                 today we’ll look at the big ‘R’ of recognition and how a<br>
-                  digital advertising network may help.
+                Successful businesses have many things in common,<br />
+                today we’ll look at the big ‘R’ of recognition and how a<br />
+                digital advertising network may help.
               </p>
               <div class="button-box">
                 <a href="#" class="button">MORE DETAILS</a>
                 <!-- /.button -->
               </div>
               <!-- /.button-box -->
-               <div class="author-row">
+              <div class="author-row">
                 <svg>
-                    <use xlink:href="./img/what-we-do/map-dot.svg#map-dot"></use>
+                  <use xlink:href="./img/what-we-do/map-dot.svg#map-dot"></use>
                 </svg>
-                   <p class="author">Hong Kong - 1588 feet</p>
-                   <!-- /.author -->
-               </div>
-               <!-- /.author-row -->
+                <p class="author">Hong Kong - 1588 feet</p>
+                <!-- /.author -->
+              </div>
+              <!-- /.author-row -->
             </div>
             <!-- /.text-part -->
           </div>
@@ -234,5 +267,8 @@
       </div>
       <!-- /.container -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
   </body>
 </html>
