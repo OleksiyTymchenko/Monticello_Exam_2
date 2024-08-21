@@ -1,4 +1,20 @@
-import Swiper from 'swiper';
-import 'swiper/swiper.min.css';
-// init Swiper:
-const swiper = new Swiper('.swiper', {});
+// import Swiper from 'swiper';
+// import 'swiper/swiper.min.css';
+// // init Swiper:
+// const swiper = new Swiper('.swiper', {});
+
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  
