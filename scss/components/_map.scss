@@ -12,7 +12,7 @@
 
   .container {
     position: relative;
-    top: -285px; 
+    top: -285px;
     padding: 60px;
     width: 770px;
     background-color: #fff;
@@ -20,48 +20,79 @@
     flex-direction: column;
 
     h2.main-title {
-        text-align: center;
-        position: relative;
-        font-size: 4.4rem;
-        font-weight: 700; 
-        margin: 30px auto 42px; 
-      }
-      h2.main-title::before {
-        content: "";
-        display: block;
-        height: 1px;
-        width: 100px;
-        background-color: #2c4058;
-        position: absolute;
-        margin: auto;
-        top: -30px;
-        left: 0;
-        right: 0;
-      }
-      .information-box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .info{
-            .location-icon{
-                height: 10px;
-                width: 10px;
-            }
-            .location-row{
-                display: flex;
-                justify-content: center;
-                .location-icon{
-                    height: 10px;
-                    width: 10px;
-                    p{
-    
-                    }
-                }
-            }
-          }
-      }
+      text-align: center;
+      position: relative;
+      font-size: 4.4rem;
+      font-weight: 700;
+      margin: 30px auto 42px;
+    }
+    h2.main-title::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100px;
+      background-color: #2c4058;
+      position: absolute;
+      margin: auto;
+      top: -30px;
+      left: 0;
+      right: 0;
+    }
+    .information-box {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      justify-content: space-between;
+      .info {
+        // display: flex;
 
-      
+        .location {
+          font-size: 1.8rem;
+        }
+
+        .location-icon {
+          height: 10px;
+          width: 10px;
+        }
+        .location-row {
+          display: flex;
+          // justify-content: center;
+          align-items: baseline;
+          .location-icon {
+            height: 10px;
+            width: 10px;
+          }
+
+          p.location {
+            font-size: 1.8rem;
+          }
+        }
+      }
+      .form{
+        display: flex;
+        flex-direction: column;
+
+        .form-control {
+          width: 310px;
+          height: 41px;
+          
+          border: none;
+          border-bottom: 1px solid #2C4058;
+          color: #2C4058;
+        }
+
+        input::placeholder, input::textarea {
+          color: #4B5562;
+          font-size: 18px;
+        }
+
+        .button-box{
+          align-self: flex-end;
+          margin-top: 30px;
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 

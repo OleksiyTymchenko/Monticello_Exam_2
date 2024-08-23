@@ -101,7 +101,7 @@
     }
     .slider__item:nth-child(2) {
       .frame__photo {
-        background: url("./../img/news/card-image2.png") center / 100% 100%
+        background: url("../../img/news/card-image2.png") center / 100% 100%
           no-repeat;
         background-size: cover;
         width: 370px;
@@ -126,7 +126,7 @@
   }
 
   .swiper-slide {
-    text-align: center;
+    // text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
